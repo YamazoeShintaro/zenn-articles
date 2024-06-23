@@ -1,5 +1,5 @@
 ---
-title: "各レンダリングパターンについて"
+title: "各レンダリングパターンまとめ"
 emoji: "😆"
 type: "tech"
 topics: "nextjs"
