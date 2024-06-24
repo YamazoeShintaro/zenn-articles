@@ -1,5 +1,5 @@
 ---
-title: "各レンダリングパターンまとめ"
+title: "【Next.js】4つレンダリングパターン（CSR, SSR, SSG, ISR）"
 emoji: "😆"
 type: "tech"
 topics: "nextjs"
