@@ -3,7 +3,7 @@ title: "【TypeScript】FizzBuzzのいろんな解答"
 emoji: "🗼"
 type: "tech"
 topics: ["typescript", "fizzbuzz", "初心者", "入門", "コーディング"]
-published: false
+published: true
 date: '2024.06.25'
 ---
 
