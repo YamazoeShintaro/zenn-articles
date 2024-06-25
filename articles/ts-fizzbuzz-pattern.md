@@ -1,5 +1,5 @@
 ---
-title: "【TypeScript】FizzBuzzのいろんな解答"
+title: "【TypeScript】FizzBuzzのいろんな書き方"
 emoji: "🗼"
 type: "tech"
 topics: ["typescript", "fizzbuzz", "初心者", "入門", "コーディング"]
