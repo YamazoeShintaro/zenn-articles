@@ -1,8 +1,8 @@
 ---
 title: "【Next.js】4つレンダリングパターン（CSR, SSR, SSG, ISR）"
-emoji: "😆"
+emoji: "🕟"
 type: "tech"
-topics: "nextjs"
+topics: ["nextjs", "react", "フレームワーク", "フロントエンド"]
 published: true
 date: '2024.06.24'
 ---
