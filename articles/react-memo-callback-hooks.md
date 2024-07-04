@@ -21,13 +21,13 @@ Reactを勉強し初めの頃、hooksの中でもuseMemoやuseCallbackが中々�
 今回は、視覚的にパフォーマンスを確認するために「React Developer Tools」というchromeの拡張機能を使用します。
 [こちらから](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=ja)ダウンロードできます。
 
-## レンダリングされるイミング
+## レンダリングされるタイミング
 
 まず前提知識として、Reactアプリにおいてレンダリングが走る主なタイミングは以下の3つです。
 
-# １. コンポーネントが初めてレンダリングされるとき
-# ２. 状態（state）やプロパティ（props）が変更されたとき
-# ３. 親コンポーネントがレンダリングされた時
+**１. コンポーネントが初めてレンダリングされるとき**
+**２. 状態（state）やプロパティ（props）が変更されたとき**
+**３. 親コンポーネントがレンダリングされた時**
 
 ２と３では、再レンダリングの必要が無い（変更が無い）コンポーネントまで再レンダリングされることが考えられます。
 このような**無駄なレンダリングを回避してパフォーマンスを向上させる**のが「React.memo」「useMemo」「useCallback」たちです。
@@ -36,7 +36,7 @@ Reactを勉強し初めの頃、hooksの中でもuseMemoやuseCallbackが中々�
 
 次のようなカウンターのコードを考えます。
 
-![](../images/2.png)
+![2](../images/2.png)
 
 ```jsx
 import { useState } from 'react';
@@ -81,7 +81,7 @@ export default function Parent() {
 
 React Dev Toolsでも確認してみます。
 
-![](../images/1.png)
+<img src="../images/1.png" alt="1">
 
 Parentと一緒にChildもレンダリングされてしまっています。
 
