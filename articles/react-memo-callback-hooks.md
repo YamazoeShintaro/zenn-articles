@@ -36,7 +36,7 @@ Reactを勉強し初めの頃、hooksの中でもuseMemoやuseCallbackが中々�
 
 次のようなカウンターのコードを考えます。
 
-![2](../images/2.png)
+![](https://storage.googleapis.com/zenn-user-upload/c763dda57178-20240705.png)
 
 ```jsx
 import { useState } from 'react';
@@ -81,7 +81,7 @@ export default function Parent() {
 
 React Dev Toolsでも確認してみます。
 
-<img src="../images/1.png" alt="1">
+![](https://storage.googleapis.com/zenn-user-upload/ebbcd850e566-20240705.png)
 
 Parentと一緒にChildもレンダリングされてしまっています。
 
@@ -124,7 +124,7 @@ export default function Parent() {
 ChildをReact.memoで括り、メモ化しました。
 これでカウンターをクリックしてみて、どう変わるのか見てみます。
 
-![](../images/3.png)
+![](https://storage.googleapis.com/zenn-user-upload/3fb4b781d2be-20240705.png)
 
 **Parentがレンダリングされているにもかかわらず、Childがレンダリングされていません。**
 
@@ -189,14 +189,14 @@ export default function Parent() {
 }
 ```
 
-![](../images/4.png)
+![](https://storage.googleapis.com/zenn-user-upload/37acf57b2d7d-20240705.png)
 
 テキストを入力して`text`が変化するたびにParentが再レンダリングされるので、その度に`heavyProcess関数`も実行されます。
 この`heavyProcess関数`の中に`while (i < 1000000000) i++;`という重い処理が含まれています。
 
 テキストに文字を入力してReact Dev Toolsで確認してみます。
 
-![](../images/5.png)
+![](https://storage.googleapis.com/zenn-user-upload/20755ae4ddb4-20240705.png)
 
 右側の欄の`Render duration:465.8ms`という部分が、テキスト入力によるレンダリングでかかった時間を表しています。
 かなりの時間がかかっていて、実際に入力して文字が反映されるまでもかなりの遅れを感じます。
@@ -270,13 +270,13 @@ export default function Parent() {
 
 まずはカウンターをクリックしたときのパフォーマンスをみてみます。
 
-![](../images/6.png)
+![](https://storage.googleapis.com/zenn-user-upload/f0c9c9928cf2-20240705.png)
 
 依存配列に指定した変数`count`が変わるので、`heavyProcess関数`が今まで通り実行されています。
 
 次にテキストを入力したときのパフォーマンスを見てみます。
 
-![](../images/7.png)
+![](https://storage.googleapis.com/zenn-user-upload/64ca0259228f-20240705.png)
 
 今度は`count`に変更がないので`heavyProcess関数`が実行されず、スムーズに動いています。
 
@@ -353,7 +353,7 @@ export default function Parent() {
 }
 ```
 
-![](../images/8.png)
+![](https://storage.googleapis.com/zenn-user-upload/225ca2f831af-20240705.png)
 
 UIがメチャクチャですが許してください（笑）
 
@@ -364,7 +364,7 @@ React.memoの効果は「**そのコンポーネントの中身に変化がな�
 例えば、テキストを入力したら`text`に変更があるのでParentがレンダリングされ、propsを通じてChildもレンダリングされてしまいます。
 React Dev Toolsで確認してみます。
 
-![](../images/9.png)
+![](https://storage.googleapis.com/zenn-user-upload/6111d2e9422e-20240705.png)
 
 `Parent`の下に`_c(Memo)`というメモ化したはずのChildがレンダリングされてしまっています。
 
@@ -443,7 +443,7 @@ export default function Parent() {
 
 では、テキストを変更したときの挙動をReact Dev Toolsで確認してみます。
 
-![](../images/10.png)
+![](https://storage.googleapis.com/zenn-user-upload/598b5c11d8cf-20240705.png)
 
 Parentがレンダリングされているものの、Childはレンダリングされなくなりました。
 これは、`handleClick関数`をメモ化し他ので、Parentがレンダリングされても`handleClick関数`が生成されずChildに変化がないためです。
