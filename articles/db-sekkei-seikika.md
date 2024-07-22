@@ -12,6 +12,9 @@ date: '2024.07.22'
 「SQL~ゼロからはじめるデータベース操作~」と「達人に学ぶSQL徹底指南書」でSQL文の基礎は学習したので、DB設計も学習したい思い「達人に学ぶDB設計徹底指南書」を読みました。
 今回はその中でも**正規化**についてまとめてみようと思います。
 
+![](https://storage.googleapis.com/zenn-user-upload/d2edd35d5493-20240722.png)
+![](https://storage.googleapis.com/zenn-user-upload/0e033fab9df8-20240722.png)
+
 ## 正規化とは
 
 DB設計を行き当たりばったりで行うと、以下のような問題が起きることがあります。
