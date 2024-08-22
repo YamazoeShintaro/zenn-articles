@@ -1,5 +1,5 @@
 ---
-title: "【React】React.memo/useMemo/useCallback"
+title: "【React】React.memo / useMemo / useCallback"
 emoji: "📝"
 type: "tech"
 topics: ["react", "hooks", "初心者", "入門", "フロントエンド"]
